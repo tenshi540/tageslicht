@@ -1,0 +1,137 @@
+/* allgemein */
+body {
+    background-color: #FFFFFF;
+    color: #4A4A4A;
+    font-weight: bold;
+    background-image: url("img/imprintbg.jpg");
+    background-repeat: repeat;
+    padding-top: 56px !important; /* navbar puffer */
+}
+
+
+/* navbar stylin */
+.navbar {
+    background-color: #B3E5FC !important;
+    border-bottom: 1px solid #F48FB1;
+}
+
+.navbar-brand, .nav-link {
+    color: #4A4A4A !important;
+    font-weight: bold;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #F06292 !important;
+}
+
+/* form container stylisierung */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto; /* form vertikeal zentrieren */
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #F48FB1;
+    border-radius: 8px;
+    color: #4A4A4A;
+    font-weight: bold;
+}
+
+/* Input and Button Styling */
+input, textarea, button {
+    background-color: #E1F5FE !important;
+    color: #4A4A4A !important;
+    border: 1px solid #B3E5FC !important; /* hellblauer rand */
+    font-weight: bold !important;
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
+    border-color: #F48FB1 !important;
+    box-shadow: 0 0 5px #F48FB1 !important;
+}
+
+button {
+    background-color: #F48FB1 !important;
+    color: #4A4A4A !important;
+    border: 1px solid #B3E5FC !important;
+    font-weight: bold !important;
+}
+
+button:hover {
+    background-color: #B3E5FC !important;
+    color: #4A4A4A !important;
+}
+
+.btn-danger {
+    background-color: #F48FB1 !important;
+    color: #4A4A4A !important;
+    border: 1px solid #B3E5FC !important;
+    font-weight: bold !important;
+}
+
+.btn-danger:hover {
+    background-color: #B3E5FC !important;
+    color: #4A4A4A !important;
+}
+
+
+
+
+/* impressum */
+.impressum {
+    display: flex; /* flexbox Layout */
+    flex-direction: column; /* vertikal anordnen */
+    align-items: center; /* zentrieren */
+    justify-content: center; /* zentrieren */
+    text-align: center; /* text zentrieren */
+    padding: 20px; /* abstand innen */
+    margin: 0; /* kein Außenabstand */
+    background-image: url("img/imprintfiller.png");
+    background-size:  10%;
+    background-repeat: repeat;
+}
+
+/* abstaende fuer texte, impressum */
+.impressum p, .impressum h3 {
+    margin: 10px 0; /* abstand oben und unten */
+    padding: 0; /* kein Padding */
+}
+
+/* container für die einzelnn textblöcke */
+.textblock {
+    display: flex; /* flexbox layout */
+    justify-content: center; /* zentrieren */
+    align-items: center; /* zentrieren */
+    width: 100%; /* volle breite */
+    margin: 0 auto; /* zentrieren */
+    text-align: center; /* text zentrieren */
+}
+
+/* absatzabstaende */
+.textblock p {
+    margin: 0; /* kein außeenabstand */
+    padding: 5px 0; /* etwas abstand oben und unten */
+}
+
+/* kleine bildschirme */
+@media (max-width: 768px) {
+    .impressum .textblock {
+        width: 100%; /* volle breite */
+        padding: 10px; /* etwas padding */
+    }
+
+/* zentrieren, kleine bildschrime */
+    .impressum .col-xs-12 {
+        text-align: center; /* text zentrieren */
+        padding-left: 0; /* kein links Padding */
+        padding-right: 0; /* kein rechts Padding */
+    }
+}
+
+/* autocenter */
+
+img {
+    align-items: center !important;
+    margin-left: auto !important;
+  margin-right: auto !important;
+}
